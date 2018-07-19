@@ -1,0 +1,30 @@
+.app__title {
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+}
+
+.toggle {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toggle__label {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle__input {
+  font-size: 2rem;
+  color: #333;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "react-testing-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:e2e": "cypress open",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cypress": "^3.0.2",
+    "cypress-testing-library": "^2.2.0",
+    "react-testing-library": "^4.1.2"
+  }
+}

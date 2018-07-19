@@ -1,0 +1,42 @@
+.switch {
+  position: relative;
+  outline: 0;
+  padding: 4px;
+  border: 2px solid grey;
+  width: 8em;
+  height: 4em;
+  border-radius: 4rem;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s;
+}
+
+.switch::after {
+  position: relative;
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background: rgb(90, 90, 90);
+  transition: all 0.2s;
+}
+
+.switch--on {
+  background: rgb(94, 196, 94);
+}
+
+.switch--on::after {
+  left: 50%;
+  background: rgb(30, 30, 30);
+}
+
+.switch__input {
+  position: absolute;
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+}
