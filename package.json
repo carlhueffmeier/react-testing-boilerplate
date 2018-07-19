@@ -11,12 +11,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:e2e": "cypress open",
+    "test:e2e": "BROWSER=\"none\" start-server-and-test start http://localhost:3000 cy:open",
+    "test:e2e:run": "BROWSER=\"none\" start-server-and-test start http://localhost:3000 cy:run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "cypress": "^3.0.2",
     "cypress-testing-library": "^2.2.0",
-    "react-testing-library": "^4.1.2"
+    "react-testing-library": "^4.1.2",
+    "start-server-and-test": "^1.5.0"
   }
 }
